@@ -1,0 +1,32 @@
+
+
+<div class="container">
+    <h1>Bid Config Demo</h1>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Bid Config Response</div>
+    <table class="table">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Updated</th>
+        <th>Last Executed</th>
+        <th>Tags</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let bidconfig of bidConfigs">
+        <td>{{bidconfig._id}}</td>
+        <td>{{bidconfig.name}}</td>
+        <td>{{bidconfig.price}}</td>
+        <td>{{bidconfig.datetimes.updated}}</td>
+        <td>{{bidconfig.datetimes.last_excuted}}</td>
+        <td>{{bidconfig.tags}}</td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
